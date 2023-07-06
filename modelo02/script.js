@@ -1,8 +1,9 @@
 function verificar () {
     var data = new Date() 
     var ano = data.getFullYear()
-    var fano = docuemt.getElementById('txtano')
+    var fano = document.getElementById('txtano')
     var res = document.querySelector('div#res') 
+
     if (fano.value.length == 0 || Number(fano.value) > ano){
         window.alert('[ERROR] Verifique os dados e tente novament!')
     }  else {
@@ -10,7 +11,7 @@ function verificar () {
         var idade =  ano - Number(fano.value)
         var gênero = '' 
         var img =  document.createElement('img')
-        img = setAttribute('id', 'foto')
+        img.setAttribute('id', 'foto')
         if (fsex[0].checked) {
             gênero = 'Homem' 
             if (idade >=0 && idade < 10){
