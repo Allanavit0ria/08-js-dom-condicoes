@@ -45,7 +45,7 @@ function verificar () {
             }
         }
         res.computedStyleMap.textAlign = 'center' 
-        res.innnerHTML = ` Detectamos ${gênero} com ${idade} anos.` 
+        res.innnerHTML = `Detectamos ${gênero} com ${idade} anos.` 
         res.appendChild(img) 
     }
 }
