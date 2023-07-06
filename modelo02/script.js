@@ -7,7 +7,7 @@ function verificar () {
     if (fano.value.length == 0 || Number(fano.value) > ano){
         window.alert('[ERROR] Verifique os dados e tente novament!')
     }  else {
-        var fsex = document.getElementsByName('radsex') 
+        var fsex = document.getElementByName('radsex') 
         var idade =  ano - Number(fano.value)
         var gênero = '' 
         var img =  document.createElement('img')
